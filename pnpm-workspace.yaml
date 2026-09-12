@@ -1,0 +1,38 @@
+packages:
+  - "artifacts/*"
+  - "lib/*"
+
+allowBuilds:
+  esbuild: true
+
+catalog:
+  # frontend framework / build tooling
+  react: ^18.3.1
+  react-dom: ^18.3.1
+  vite: ^6.3.5
+  "@vitejs/plugin-react": ^4.3.4
+  "@tailwindcss/vite": ^4.1.3
+  tailwindcss: ^4.1.3
+  "@types/react": ^18.3.18
+  "@types/react-dom": ^18.3.5
+  "@types/node": ^22.13.1
+
+  # Replit-only vite plugins (safe to install off Replit; only
+  # activated when the REPL_ID env var is present — see vite.config.ts)
+  "@replit/vite-plugin-cartographer": ^0.2.8
+  "@replit/vite-plugin-dev-banner": ^0.1.1
+  "@replit/vite-plugin-runtime-error-modal": ^0.0.3
+
+  # data fetching / validation
+  "@tanstack/react-query": ^5.66.0
+  zod: ^3.24.1
+
+  # ui utilities used by the shadcn-style components
+  "class-variance-authority": ^0.7.1
+  clsx: ^2.1.1
+  "tailwind-merge": ^2.6.0
+  "framer-motion": ^11.18.2
+  "lucide-react": ^0.474.0
+
+  # backend
+  "drizzle-orm": ^0.38.4
